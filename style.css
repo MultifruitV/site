@@ -3,19 +3,20 @@ h1, h2, h3, h4, h5, h6, p, li{
 	/*font-weight: bold;*/
 	/*font-size: 100px;*/
 }
-/*html, body {
+html, body {
 	height: 100%;
-}*/
+}
 body {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 	margin: 0; 
 	/*padding: 0;*/
 }
 .header {
 	/*background-color: #66FF66;*/
 	margin-top: -67px;
-	margin-bottom: -97px;
+	margin-bottom: -67px;
 }
 .header-title {
 	/*height: 200px;*/
@@ -35,14 +36,14 @@ body {
 	font-family: Corbel, serif;
 	font-size: 17px;
 	font-weight: 400;
-	position: relative;
-	top: -170px;
-	right: -1250px;
+	position: absolute;
+	top: 0%;
+	right: 42%;
 }
 .eng {
-	position: relative;
-	top: -135px;
-	right: -1165px;
+	position: absolute;
+	top: 0%;
+	right: 52%;
 }
 .content {
 	width: 100%;
@@ -50,7 +51,8 @@ body {
 	/*background-image: url(img/Bark.png);*/
 	background-image: url(img/LinesTwo.png);
 	/*background-color: #66FF66;*/
-	background-size: 100%;
+	background-size: 100% 100%;
+	/*background-repeat: no-repeat;*/
 	flex: 1 0 auto;
 }
 .block {
@@ -109,14 +111,19 @@ body {
 	width: 100%;
 	background-color: #000000;
 	/*flex-shrink: 0;*/
-	margin-top: -50px;
+	margin-top: -51px;
 	margin-bottom: -16px;
+	flex: 0 0 auto;
  }
 .footer-title {
 	font-size: 50px;
+	font-weight: bold;
 	padding: 5px 0 0 0;
 	color: #FFFFFF;
 	text-align: center;
+	margin-bottom: -70px;
+	/*position: absolute;*/
+	/*bottom: 2%;*/
 }
 .footer-text {
 	padding: 0 0 15px 50px;
@@ -125,7 +132,4 @@ body {
 }
 .contacts-text {
 	font-weight: bold;
-	/*box-shadow: 0 0 5px;*/
-	/*color: blue;*/
-	/*font-style: italic;*/
 } 
